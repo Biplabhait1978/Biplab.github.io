@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional computer consulting services and premium tech solutions in Dankuni, Hooghly">
+    <meta name="keywords" content="computer repair, IT services, data recovery, hardware upgrades, tech consultant">
+    <title>Biplab Hait - Premier Computer Consultant & Tech Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #002b5c;
+            --secondary-blue: #004080;
+            --accent-green: #28a745;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            background: var(--primary-blue);
+            padding: 15px;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            color: var(--accent-green);
+        }
+        .header {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            font-size: 2.2rem;
+        }
+        .hero-text {
+            font-size: 1.2rem;
+            margin-top: 15px;
+            opacity: 0.9;
+        }
+        .section {
+            background: white;
+            padding: 30px;
+            margin: 30px auto;
+            width: 85%;
+            max-width: 1000px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        .highlight-text {
+            color: var(--primary-blue);
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent-green);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #218838;
+            transform: scale(1.05);
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .feature-card {
+            padding: 20px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            text-align: left;
+        }
+        .feature-card i {
+            font-size: 2rem;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+        }
+        .testimonial {
+            font-style: italic;
+            background: #f1f3f5;
+            padding: 20px;
+            border-left: 4px solid var(--accent-green);
+            margin: 25px 0;
+        }
+        .contact-form input, 
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 2px solid #dee2e6;
+            border-radius: 6px;
+        }
+        footer {
+            background: var(--primary-blue);
+            color: white;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+        .social-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .header { font-size: 1.8rem; }
+            .nav-links { gap: 15px; font-size: 0.9rem; }
+            .section { width: 90%; padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="sticky-nav">
+        <div class="nav-links">
+            <a href="#sales"><i class="fas fa-laptop"></i> Products</a>
+            <a href="#services"><i class="fas fa-tools"></i> Services</a>
+            <a href="#contact"><i class="fas fa-phone"></i> Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="header">
+        <div>💻 Biplab Hait</div>
+        <div class="hero-text">Your Trusted Technology Partner Since 2015</div>
+    </div>
+
+    <!-- Sales Section -->
+    <div class="section" id="sales">
+        <h2 class="highlight-text"><i class="fas fa-desktop"></i> Premium Tech Solutions</h2>
+        <p>We provide enterprise-grade hardware and cutting-edge accessories from top brands:</p>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-server"></i>
+                <h3>Workstation & Servers</h3>
+                <p>High-performance Dell/HP workstations and server solutions for businesses</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-hdd"></i>
+                <h3>Storage Solutions</h3>
+                <p>SSD upgrades, NAS systems, and enterprise storage configurations</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-keyboard"></i>
+                <h3>Premium Accessories</h3>
+                <p>Logitech peripherals, ergonomic chairs, and anti-glare monitors</p>
+            </div>
+        </div>
+
+        <div class="testimonial">
+            "Biplab helped our office upgrade 50+ systems seamlessly. Truly professional service!"<br>
+            - Local Business Client
+        </div>
+
+        <a href="#contact" class="button">
+            <i class="fas fa-comment-dollar"></i>
+            Request Custom Quote
+        </a>
+    </div>
+
+    <!-- Services Section -->
+    <div class="section" id="services">
+        <h2 class="highlight-text"><i class="fas fa-concierge-bell"></i> Comprehensive IT Services</h2>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-database"></i>
+                <h3>Data Management</h3>
+                <ul>
+                    <li>Emergency data recovery</li>
+                    <li>Automated backup solutions</li>
+                    <li>RAID configuration</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-network-wired"></i>
+                <h3>Network Solutions</h3>
+                <ul>
+                    <li>WiFi mesh network setup</li>
+                    <li>Business firewall installation</li>
+                    <li>IP camera systems</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-user-shield"></i>
+                <h3>Security & Maintenance</h3>
+                <ul>
+                    <li>Virus/malware removal</li>
+                    <li>OS optimization</li>
+                    <li>Preventive maintenance</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="highlight-text" style="color: var(--accent-green); font-size: 1.2rem;">
+            <i class="fas fa-star"></i> 24/7 Emergency Support Available
+        </p>
+
+        <a href="#contact" class="button">
+            <i class="fas fa-headset"></i>
+            Schedule Service Call
+        </a>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section" id="contact">
+        <h2 class="highlight-text"><i class="fas fa-envelope-open-text"></i> Get Instant Support</h2>
+        
+        <form class="contact-form">
+            <select name="service-type" required>
+                <option value="">Select Service Type</option>
+                <option>Computer Purchase Consultation</option>
+                <option>Repair Service Request</option>
+                <option>Network Setup Inquiry</option>
+                <option>Other Technical Support</option>
+            </select>
+            
+            <input type="text" name="name" placeholder="Your Full Name" required>
+            <input type="email" name="email" placeholder="Professional Email Address" required>
+            <input type="tel" name="phone" placeholder="Contact Number" required>
+            
+            <textarea name="message" 
+                      placeholder="Please describe your requirements including:\n- Device model(s)\n- Issues experienced\n- Preferred timeline" 
+                      rows="5" required></textarea>
+            
+            <button type="submit" class="button">
+                <i class="fas fa-paper-plane"></i>
+                Send Professional Inquiry
+            </button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+        
+        <p>📍 Technology Hub: 425, Nandan Kanan (W), Dankuni, Hooghly - 712311</p>
+        <p>🕒 Business Hours: Mon-Sat 10AM-7PM | Sun: Emergency Only</p>
+        <p>📞 Priority Support: <a href="tel:+919876543210" style="color:white;">+91 98765 43210</a></p>
+        
+        <p style="margin-top: 30px; opacity: 0.8;">
+            © <span id="current-year"></span> Biplab Hait - Certified IT Consultant<br>
+            <small>ISO 9001:2015 Quality Certified Services</small>
+        </p>
+    </footer>
+
+    <script>
+        // Dynamic copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
