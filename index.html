@@ -41,16 +41,28 @@
         .nav-links a:hover {
             color: var(--accent-green);
         }
+    
         .header {
             background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
             color: white;
             text-align: center;
-            padding: 50px 20px;
+            padding: 10px 20px;
             font-size: 2.2rem;
         }
+        .header-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0,43,92,0.9), rgba(0,64,128,0.9)),
+                        
+        }
+
+        
         .hero-text {
             font-size: 1.2rem;
-            margin-top: 15px;
+            margin-top: 5px;
             opacity: 0.9;
         }
         .section {
@@ -112,56 +124,143 @@
             border-left: 4px solid var(--accent-green);
             margin: 25px 0;
         }
-        .contact-form input, 
-        .contact-form textarea,
-        .contact-form select {
-            width: 100%;
-            padding: 12px;
-            margin: 8px 0;
-            border: 2px solid #dee2e6;
-            border-radius: 6px;
-        }
         footer {
             background: var(--primary-blue);
             color: white;
             padding: 40px 20px;
             margin-top: 50px;
         }
-        .social-links {
+        .social-links1 {
             display: flex;
             gap: 20px;
             justify-content: center;
             margin: 20px 0;
         }
-        .social-links a {
+        .social-links1{
+            color: rgb(0, 4, 255);
+            font-size: 1.5rem;
+        }
+
+        .social-links2 {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .social-links2 a {
             color: white;
             font-size: 1.5rem;
         }
+        .profile-card {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            align-items: center;
+        }
+        .profile-image {
+            width: 100%;
+            border-radius: 12px;
+        }
         @media (max-width: 768px) {
-            .header { font-size: 1.8rem; }
-            .nav-links { gap: 15px; font-size: 0.9rem; }
-            .section { width: 90%; padding: 25px; }
+            .header { 
+                font-size: 1.8rem;
+                padding: 60px 20px;
+            }
+            .nav-links { 
+                gap: 15px; 
+                font-size: 0.9rem; 
+            }
+            .section { 
+                width: 90%; 
+                padding: 25px; 
+            }
+            .profile-card { 
+                grid-template-columns: 1fr; 
+            }
+        }
+
+        /* Styles for the search bar */
+        .search-container {
+            text-align: center;
+            margin-top: 20px; /* Adjust as needed */
+        }
+        .search-box {
+            padding: 10px;
+            width: 300px; /* Adjust size as needed */
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        .search-box:focus {
+            border-color: #4285f4;
+            box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+        }
+        .search-button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #4285f4; /* A nice blue color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .search-button:hover {
+            background-color: #357ae8; /* Darker blue on hover */
         }
     </style>
 </head>
 <body>
-
-    <!-- Navigation -->
     <nav class="sticky-nav">
         <div class="nav-links">
+            <a href="#about"><i class="fas fa-user"></i> About</a>
             <a href="#sales"><i class="fas fa-laptop"></i> Products</a>
             <a href="#services"><i class="fas fa-tools"></i> Services</a>
             <a href="#contact"><i class="fas fa-phone"></i> Contact</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <div class="header">
         <div>💻 Biplab Hait</div>
-        <div class="hero-text">Your Trusted Technology Partner Since 2015</div>
+        <div class="hero-text">Your Trusted Technology Partner Since 2005</div>
+    </div>
+    <div class="search-container">
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" class="search-box" name="q" placeholder="Search Google">
+            <button type="submit" class="search-button">Search</button>
+        </form>
     </div>
 
-    <!-- Sales Section -->
+    <div class="social-links1">
+        <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+       
+        <a href="https://mail.google.com/"><i class="fas fa-envelope"></i></a>
+        
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+        
+    </div>  
+
+    <div class="section" id="about">
+        <h2 class="highlight-text"><i class="fas fa-user-tie"></i> About Me</h2>
+        <h3>IT Professional & Technology Consultant</h3>
+        <style>
+            p {
+                text-align: justify;
+            }
+        </style>
+        <p>For over two decades, I've been diving deep into the world of computers and technology. As a IT Professional and Technology Consultant, I've had the exciting opportunity to work with everything from the nuts and bolts of computer hardware to the complex networks that keep businesses running smoothly.
+
+            Think of me as a tech problem-solver. Whether it's setting up a super-fast network, figuring out why your computer is acting up, or designing a whole IT system for a big company, I love finding the right solutions. I specialize in creating customized plans, so every client gets exactly what they need, whether they're a big business or someone who just wants their home computer to work better.
+            
+            I believe technology should make life easier, not more complicated. With my 20+ years of experience, I'm here to help you navigate the ever-changing tech world and find the perfect solutions for your needs.</p>
+        <div class="feature-grid" style="margin-top: 20px;">
+            
+        </div>
+    </div>
+
     <div class="section" id="sales">
         <h2 class="highlight-text"><i class="fas fa-desktop"></i> Premium Tech Solutions</h2>
         <p>We provide enterprise-grade hardware and cutting-edge accessories from top brands:</p>
@@ -180,7 +279,7 @@
             <div class="feature-card">
                 <i class="fas fa-keyboard"></i>
                 <h3>Premium Accessories</h3>
-                <p>Logitech peripherals, ergonomic chairs, and anti-glare monitors</p>
+                <p>Multi-Port USB Hubs, Logitech Peripherals, Cooling Pads, Wireless Routers, Surge Protectors.</p>
             </div>
         </div>
 
@@ -195,14 +294,25 @@
         </a>
     </div>
 
-    <!-- Services Section -->
     <div class="section" id="services">
         <h2 class="highlight-text"><i class="fas fa-concierge-bell"></i> Comprehensive IT Services</h2>
         
         <div class="feature-grid">
+
+            <div class="feature-card">
+                <i class="fas fa-server"></i>
+                <h3>Workstation & Server Management</h3>
+                <ul>
+                    <li>Installation</li>
+                    <li>Custom Configuration</li>
+                    <li>Other Maintenance</li>
+                </ul>
+            </div>
+
             <div class="feature-card">
                 <i class="fas fa-database"></i>
                 <h3>Data Management</h3>
+                
                 <ul>
                     <li>Emergency data recovery</li>
                     <li>Automated backup solutions</li>
@@ -218,6 +328,7 @@
                     <li>IP camera systems</li>
                 </ul>
             </div>
+
             <div class="feature-card">
                 <i class="fas fa-user-shield"></i>
                 <h3>Security & Maintenance</h3>
@@ -225,6 +336,24 @@
                     <li>Virus/malware removal</li>
                     <li>OS optimization</li>
                     <li>Preventive maintenance</li>
+                </ul>
+            </div>
+            <div class="feature-card" style="background-color: white; border: 1px solid #ddd; padding: 20px; width: 250px; text-align: left;">
+                <i class="fas fa-laptop-code" style="color: #1d354e; font-size: 2em; margin-bottom: 10px;"></i> 
+                <h3 style="color: #000000; font-size: 1.2em; margin-bottom: 10px;">Software Solutions</h3>
+                <ul>
+                    <li>Application Installation</li>
+                    <li>Software Troubleshooting</li>
+                    <li>License Management</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-cogs"></i>
+                <h3>Hardware Upgrades</h3>
+                <ul>
+                    <li>Component Replacement</li>
+                    <li>Performance Enhancements</li>
+                    <li>Peripheral Setup</li>
                 </ul>
             </div>
         </div>
@@ -239,50 +368,32 @@
         </a>
     </div>
 
-    <!-- Contact Section -->
     <div class="section" id="contact">
-        <h2 class="highlight-text"><i class="fas fa-envelope-open-text"></i> Get Instant Support</h2>
-        
-        <form class="contact-form">
-            <select name="service-type" required>
-                <option value="">Select Service Type</option>
-                <option>Computer Purchase Consultation</option>
-                <option>Repair Service Request</option>
-                <option>Network Setup Inquiry</option>
-                <option>Other Technical Support</option>
-            </select>
-            
-            <input type="text" name="name" placeholder="Your Full Name" required>
-            <input type="email" name="email" placeholder="Professional Email Address" required>
-            <input type="tel" name="phone" placeholder="Contact Number" required>
-            
-            <textarea name="message" 
-                      placeholder="Please describe your requirements including:\n- Device model(s)\n- Issues experienced\n- Preferred timeline" 
-                      rows="5" required></textarea>
-            
-            <button type="submit" class="button">
-                <i class="fas fa-paper-plane"></i>
-                Send Professional Inquiry
-            </button>
-        </form>
+        <h2 class="highlight-text"><i class="fas fa-phone"></i> Get in Touch</h2>
+        <center>
+            <a href="https://forms.gle/7wHMPtYFtqSXW7C79">
+                <button style="padding: 15px 30px; background: var(--accent-green); color: white; border: none; border-radius: 25px; font-size: 1.1rem;">
+                    <i class="fas fa-envelope"></i> Send Professional Inquiry
+                </button>
+            </a>
+        </center>
     </div>
 
-    <!-- Footer -->
     <footer>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fas fa-envelope"></i></a>
+        <div class="social-links2">
+            <a href="https://wa.me/+919339583004"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/biplab.hait"><i class="fab fa-facebook"></i></a>
+            <a href="mailto:biplabhait@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
+        <div>
+            <p><center>📍 Technology Hub: Nandankanan (W), Dankuni, Hooghly - 712311</center></p>
+            <p><center>🕒 Business Hours: Mon-Sat 10AM-7PM | Sun: Emergency Only</center></p>
+            <p><center>📞 Priority Support: +91 93395 83004</center></p>
+            <p style="margin-top: 30px; opacity: 0.8;"><center>
+                © <span id="current-year"></span> Biplab Hait - Certified IT Consultant</center>
+            </p>
         
-        <p>📍 Technology Hub: 425, Nandan Kanan (W), Dankuni, Hooghly - 712311</p>
-        <p>🕒 Business Hours: Mon-Sat 10AM-7PM | Sun: Emergency Only</p>
-        <p>📞 Priority Support: <a href="tel:+919876543210" style="color:white;">+91 98765 43210</a></p>
-        
-        <p style="margin-top: 30px; opacity: 0.8;">
-            © <span id="current-year"></span> Biplab Hait - Certified IT Consultant<br>
-            <small>ISO 9001:2015 Quality Certified Services</small>
-        </p>
+        </div>
     </footer>
 
     <script>
@@ -297,6 +408,13 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        // Header background fade on scroll
+        window.addEventListener('scroll', () => {
+            const headerBg = document.querySelector('.header-bg');
+            const scrollPosition = window.pageYOffset;
+            headerBg.style.opacity = 1 - Math.min(scrollPosition / 400, 0.7);
         });
     </script>
 </body>
